@@ -35,7 +35,6 @@
             <service android:name="com.flybuy.cordova.location.BackgroundLocationUpdateService" android:enabled="true"/>
         </config-file>
 
-
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
             <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
@@ -71,23 +70,6 @@
                 <string>location</string>
             </array>
         </config-file>
-
-
-        <config-file target="*-Info.plist" parent="MKDirectionsApplicationSupportedModes">
-            <array>
-                <string>MKDirectionsModeBike</string>
-                <string>MKDirectionsModeBus</string>
-                <string>MKDirectionsModeCar</string>
-                <string>MKDirectionsModeFerry</string>
-                <string>MKDirectionsModeOther</string>
-                <string>MKDirectionsModePedestrian</string>
-                <string>MKDirectionsModeRideShare</string>
-                <string>MKDirectionsModeStreetCar</string>
-                <string>MKDirectionsModeSubway</string>
-                <string>MKDirectionsModeTaxi</string>
-                <string>MKDirectionsModeTrain</string>
-            </array>
-        </config-file>        
 
         <config-file target="config.xml" parent="/*">
             <feature name="BackgroundLocationServices">
